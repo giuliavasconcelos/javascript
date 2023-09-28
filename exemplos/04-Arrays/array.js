@@ -35,4 +35,4 @@ let equipesF1 = [
 
 // 2ª Digitação (Aqui)
 
-document.write(`Melhor equipe de F1 da atualidade: "<strong>${equipesF1[0][2]}</strong><br>`);
+document.write(`Melhor equipe de F1 da atualidade: "<strong>${equipesF1[0][2]}</strong><br>"`);
