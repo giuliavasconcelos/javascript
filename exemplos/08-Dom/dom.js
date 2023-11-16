@@ -79,9 +79,9 @@ subtitulos.forEach(subtitulo => {
 });
 
 // Sintaxe For...of (Loop comum)
-for (const subtitulo of subtitulos) {
-    subtitulo.style.color = 'blue';
-}
+// for (const subtitulo of subtitulos) {
+//     subtitulo.style.color = 'blue';
+// }
 
 
 // ____________________________________________________________________________
@@ -92,7 +92,7 @@ for (const subtitulo of subtitulos) {
 
 
 // 3ª Digitação (Aqui)
-const titulo = document.querySelector('h3');
+const tituloEditores = document.querySelector('h3');
 
 tituloEditores.textContent = 'Melhores Editores';
 tituloEditores.style.color = 'orange';

@@ -12,6 +12,14 @@ const sub01 = pagina.querySelector("#subtitulo-exemplo01");
 
 // 1ª Digitação (Aqui)
 
+sub01.addEventListener ('mouseover', function() {
+    msg.textContent = 'Você passou o mouse sobre...';
+});
+
+sub01.addEventListener ('mouseout', function() {
+    msg.textContent = '';
+});
+
 
 
 // ____________________________________________________________________________
@@ -20,6 +28,15 @@ const sub01 = pagina.querySelector("#subtitulo-exemplo01");
 
 
 // 2ª Digitação (Aqui)
+const botao = pagina.querySelector("#noturno");
+botao.addEventListener('click', function() {
+    pagina.classList.toggle('modo-noturno');
+    if (botao.textContent == 'Ativar') {
+        botao.textContent = "Desativar";
+    } else {
+        botao.textContent = 'Ativar'
+    }
+});
 
 
 
@@ -65,6 +82,17 @@ formulario.addEventListener('submit', function(event) {
 
 
 // 3ª Digitação (Aqui)
+function calculaMedia(nota1, nota2){
+    return (nota1 + nota2) / 2;
+}
+
+function verificaSituacao(media){
+    if(media >=7) {
+        return 'Aprovado';
+    } else {
+        return 'Reprovado';
+    }
+}
 
 
 
